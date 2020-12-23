@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #4c4c4c;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: "Red Hat Display", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+  font-family: "Red Hat Display", sans-serif;
+}
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+.bg-primary {
+  background-color: #1d9129 !important;
+}
+.bg-main {
+  background-color: #1d9129 !important;
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #e0dedf !important;
+  border-color: #e0dedf !important;
+}
+.btn-primary {
+  background-color: #1d9129 !important;
+  border-color: #1d9129 !important;
+  border-radius: 50px !important;
+}
+.btn{
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  height: 40px;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #03d53a !important;
+}
+
+a {
+  color: #1d9129 !important;
+  text-decoration: none !important;
+}
+p {
+  margin-bottom: 0;
+}
+.error {
+  color: #ff0000;
+}
+
+/*-------Login CSS------*/
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-control {
+  color: #4C4C4C !important;
+  background-color: #F0F6F2!important;
+}
+.form-group label{
+  text-transform: uppercase;
+}
+.login-page label, .login-page input{
+  font-size: 14px;
+}
+.login-page .login-img {
+  margin: 12px 0;
+  display: block;
+}
+.login-page img {
+  width: 105px;
+  height: 105px;
+  object-fit: cover;
+}
+.login-page .login-title {
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 24px;
+}
+.login-disc {
+  text-align: left !important;
+  margin: 2rem 0.5rem;
+  color: #828282;
+}
+.login-btn {
+  text-align: center;
+  margin: 20px auto;
+  display: block !important;
+  width: 200px;
+}
+.login-page p {
+  text-align: center;
+}
+
+/*----------Home-page-----*/
+
+.home-page {
+  padding: 60px 0;
+}
+.navbar-brand {
+  font-weight: 500;
+  color: #fff !important;
+  padding: 0px !important;
+}
+.nav-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.nav-right-icon .MuiSvgIcon-root {
+  fill: #fff;
+  font-size: 1.8rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.bottom-menu {
+  background-color: #fff;
+}
+
+.border-outer {
+  padding: 15px;
+  /* border: 1px solid #e7e7e7; */
+  box-shadow: 0 1px 4px 0 rgba(5, 5, 5, 0.2);
+  border-radius: 4px;
+  margin: 30px 0;
+}
+.media-section {
+  background-color: #f7f7f7;
+}
+
+.media-section .media img {
+  border-radius: 50px;
+  object-fit: cover;
+}
+.media-section p {
+  margin-bottom: 5px;
+  color: #828282;
+}
+.media-section a {
+  float: right;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.media-section a .MuiSvgIcon-root{
+  font-size: 22px;
+}
+
+.image-section .img-fluid {
+  max-width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(5, 5, 5, 0.2);
+}
+
+.bottom-menu {
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.1);
+  padding: 5px 0 !important;
+}
+.bottom-menu .row {
+  text-align: center;
+  display: contents;
+}
+.bottom-icon p {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 0;
+  margin-bottom: 0px;
+}
+.bottom-icon{
+  color: #828282;
+  cursor: pointer;
+}
+
+.bottom-icon:hover{
+  color: #2FB43D;
+}
+
+
+.bottom-icon.active{
+  color: #2FB43D;
+}
+
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  
+  -webkit-text-fill-color: #4C4C4C;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*----------Responsive-----*/
+
+@media only screen and (min-width: 992px) {
+  .login-page {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px !important;
+  }
+  .image-section .img-fluid {
+    height: 280px;
+    object-fit: cover;
+  }
+  .bottom-icon p {
+    font-size: 12px;
+  }
+  .login-disc {
+    margin: 1rem 0.5rem;
+  }
+  .media-body a {
+    font-size: 13px;
+  }
+  .media-section a .MuiSvgIcon-root{
+    font-size: 18px;
+  }
+  .alert-danger {
+    font-size: 12px;
+    padding: 8px !important;
+}
+}
+@media only screen and (max-width: 424px) {
+  .navbar-brand {
+    font-size: 16px !important;
+  }
+  .nav-right-icon .MuiSvgIcon-root {
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
+  .media-body h5 {
+    font-size: 16px;
+  }
+  .media-body p{
+    font-size: 14px;
+  }
+  .media-body a {
+    font-size: 12px;
+  }
+  .image-section .img-fluid {
+    height: 180px;
+    object-fit: cover;
+  }
+  .image-section h5 {
+    font-size: 14px !important;
+  }
+}
+
+.text-danger {
+  margin-left: 15px;
+}
